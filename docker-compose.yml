@@ -12,8 +12,6 @@ minecraft-server:
     LEVEL: "mcserveriomapas"
     MOTD: "3 builders Many tools"
     MAX_TICK_TIME: 60000
-    OPS: "Robert_Ford,ManoVardasRimas,dapkarlas"
-    WHITELIST: "Robert_Ford,ManoVardasRimas"
 
   volumes:
     - ./../data:/data
