@@ -16,7 +16,7 @@ minecraft-server:
     WHITELIST: "Robert_Ford,ManoVardasRimas"
 
   volumes:
-    - ./data:/data
+    - ./../data:/data
 
   image: itzg/minecraft-server
   container_name: mc

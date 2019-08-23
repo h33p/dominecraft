@@ -23,7 +23,7 @@ chmod +x /opt/bin/docker-compose
 
 /opt/bin/docker-compose up -d
 
-cp chron.sh /usr/local/bin/chron.sh
-cp destroy.sh /usr/local/bin/destroy.sh
+cp chron.sh /tmp/chron.sh
+cp destroy.sh /tmp/destroy.sh
 cp autoshutdown.service /etc/systemd/system/
 systemctl start autoshutdown.service

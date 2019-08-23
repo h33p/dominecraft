@@ -37,4 +37,4 @@ echo "Shutting down the server..."
 docker exec -i mc rcon-cli stop
 sleep 5
 sudo sync
-destroy.sh
+/tmp/destroy.sh
