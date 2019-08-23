@@ -1,0 +1,26 @@
+
+minecraft-server:
+  ports:
+    - "25565:25565"
+
+  environment:
+    EULA: "true"
+    TYPE: PAPER
+    VERSION: 1.14.4
+    ONLINE_MODE: "false"
+    ENABLE_RCON: "true"
+    LEVEL: "mcserveriomapas"
+    MOTD: "3 builders Many tools"
+    MAX_TICK_TIME: 60000
+    OPS: "Robert_Ford,ManoVardasRimas,dapkarlas"
+    WHITELIST: "Robert_Ford,ManoVardasRimas"
+
+  volumes:
+    - ./data:/data
+
+  image: itzg/minecraft-server
+  container_name: mc
+  command: --noconsole
+  tty: true
+  stdin_open: true
+  restart: on-failure

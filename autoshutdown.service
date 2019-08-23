@@ -1,0 +1,7 @@
+[Unit]
+Description = Automatically shutdown and destroy the server
+
+[Service]
+Type=simple
+User=core
+ExecStart=/usr/local/bin/chron.sh
