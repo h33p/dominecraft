@@ -37,7 +37,7 @@ for i in $(seq 0 3); do
 	ctoken=${token:$subpos:16}
 	cfkeyhex=${fkeyhex:$subpos:16}
 	let "cftoken = 0x$ctoken ^ 0x$cfkeyhex"
-	dftoken=$(printf "%x" $cftoken)
+	dftoken=$(printf "%016x" $cftoken)
 	ftoken=$ftoken$dftoken
 done
 
